@@ -54,6 +54,20 @@ In regular expressions, quantifiers are instructions that tell the computer how 
 
 ### Character Classes
 
+In Regex, a character class is defined by square brackets `[]`, and it will match any one character from a set of characters specified within the brackets. Brackets say, "Match any one of *these* characters".
+
+In the URL Regex `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`...
+
+`[\da-z\.-]` : This character class matches a single character that can be:
+
+`\d` : Any digit (0-9). The `\d` is a shorthand character class that matches any numeral digit.
+
+`a-z` : Any lowercase letter from 'a' to 'z'. This range includes all lowercase alphabetic characters.
+
+`\.` : The dot character, which will match any character (except newLine), but when it's inside square brackets, it's taken literally. This here means it will only match a period.
+
+`-` : This is used literally here, and is searching for a `-` in the string.
+
 ### Flags
 
 ### Grouping and Capturing
