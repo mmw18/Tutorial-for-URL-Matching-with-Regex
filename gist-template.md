@@ -10,7 +10,6 @@ This tutorial will specifically explore a Regex pattern used for matching URLs: 
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
 - [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
@@ -33,7 +32,25 @@ In Regex, anchors are what specify the start and end of a string to be matched.
 
 ### Quantifiers
 
-### OR Operator
+In regular expressions, quantifiers are instructions that tell the computer how many times a certain piece of text should appear for it to be considered a match.
+
+#### Quantifier Rules:
+
+`*`: The character can show up as many times as it wants, including not at all
+
+`+`: The character needs to show up at least once, but it can be more than once
+
+`?`: The character can be there, but it's also okay if it's not
+
+`{}`: You need to find the character a specific number of times, like exactly 6 times, or maybe anywhere between 1 to 5 times.
+
+#### In the URL Regex: 
+
+`?` after `https?:\/\/` makes the protocol `(http://` or `https://`) optional.
+
+`*` after `([\/\w \.-]*)` allows for any number (including zero) of path characters.
+
+`{2,6}` after the top-level domain specifies that it should be between 2 to 6 characters long.
 
 ### Character Classes
 
