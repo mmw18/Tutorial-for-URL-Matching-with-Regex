@@ -1,10 +1,10 @@
-# Title (replace with your title)
+# URL Matching with Regex
 
 Introductory paragraph (replace this with your text)
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+This tutorial will specifically explore a Regex pattern used for matching URLs: `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`. This pattern combines various components, such as anchors, quantifiers, and character classes to correctly identify different parts of a URL. Each segment will be discussed for this, providing insight into how it validates protocols, domains, and paths.
 
 ## Table of Contents
 
@@ -23,6 +23,13 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+
+In Regex, anchors are what specify the start and end of a string to be matched. 
+
+`^` - This symbol is used as an anchor to match the beginning of a string.
+
+`$` - This symbol is used as an anchor to match the end of a string.
+
 
 ### Quantifiers
 
