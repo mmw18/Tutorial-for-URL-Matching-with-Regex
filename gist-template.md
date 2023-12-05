@@ -1,6 +1,6 @@
 # URL Matching with Regex
 
-Introductory paragraph (replace this with your text)
+Welcome to this tutorial on understanding and utilizing regular expressions (Regex) for URL matching. Regular expressions are a powerful tool in programming, allowing for precise pattern matching in text. This tutorial focuses on a Regex pattern specifically designed to match URLs. Regex components will be broken down step-by-step, clarifying how each part contributes to to identifying valid URLs.
 
 ## Summary
 
