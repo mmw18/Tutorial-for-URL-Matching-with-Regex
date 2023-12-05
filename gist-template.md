@@ -11,7 +11,6 @@ This tutorial will specifically explore a Regex pattern used for matching URLs: 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
@@ -68,11 +67,15 @@ In the URL Regex `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?
 
 `-` : This is used literally here, and is searching for a `-` in the string.
 
-### Flags
-
 ### Grouping and Capturing
 
+Parentheses create groups for capturing each part of the match. In the URL regex, each set of parentheses is a group.
+
 ### Bracket Expressions
+
+Like character classes, bracket expressions will match any one character from a set of characters. 
+
+For example, if your regex has `[abo]`, it's like having a basket with an 'a', 'b', and 'c'. The regex will be happy with any one of these letters, and will match 'a', 'b', or 'c' whereever it finds it in the text.
 
 ### Greedy and Lazy Match
 
